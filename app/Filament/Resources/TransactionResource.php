@@ -26,7 +26,7 @@ class TransactionResource extends Resource
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
                     ->required(),
-                Forms\Components\DatePicker::make('date_transaction')
+                Forms\Components\DatePicker::make('date_trx')
                     ->required(),
                 Forms\Components\Textarea::make('note')
                     ->required()
